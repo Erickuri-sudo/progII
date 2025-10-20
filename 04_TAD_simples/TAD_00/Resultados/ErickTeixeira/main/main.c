@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include "ponto.h"
+
+int main(int argc, char const *argv[])
+{
+
+    float x1,x2,y1,y2;
+
+    scanf("%f %f %f %f",&x1,&y1,&x2,&y2);
+
+    Ponto p1 = pto_cria(x1,y1);
+    Ponto p2 = pto_cria(x2,y2);
+
+    float distanciaEuclidiana = pto_distancia(p1,p2);
+    
+    printf("%g", distanciaEuclidiana);
+    
+    return 0;
+}
